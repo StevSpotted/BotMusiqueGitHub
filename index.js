@@ -31,7 +31,7 @@ bot.on('message', msg => {
 bot.on('error', (e) => console.log(e));
 bot.on('warn', (e) => console.log(e));
 //bot.on('debug', (e) => console.log(e));
-bot.login(config.token);
+bot.login(process.env.TOKEN);
 
 function getCmdFunction(cmd){
 	const COMMANDS = {
